@@ -1,0 +1,165 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet">
+<link href="style.css"
+      rel="stylesheet" type="text/css">
+    
+</head>
+    <body>
+        <div class="container">
+          <header class="header">
+            <h1 id="title" class="text-center">Formulario de encuesta de Harry Potter</h1>
+            <p id="description" class="text-center">Bienvenidos a la comunidad Potterhead</p>
+          </header>
+          <form action="" id="survey-form">
+            <div class="form-group">
+              <label id="name-label" for="name">Nombre</label>
+              <input
+               type="text"
+               id="name"
+               name="name"
+               class="form-control input"
+               placeholder="Digite su nombre aquí"
+               required/>
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Correo</label>
+              <input
+              type="email"
+              id="email"
+              class="form-control input"
+              placeholder="Digite su correo aquí"
+              required/>
+            </div>
+            <div class="form-group">
+              <label id="number-label" for="number">Edad<span class="clue">(optional)</span></label>
+             <input 
+              type="number"
+              id="number"
+              class="form-control input"
+              placeholder="Digite su edad aquí"
+              min="0"
+              max="120"
+              />
+            </div>
+            <div class="form-group checkbox">
+            <label id="how-label">¿Comó conoces la saga de Harry Potter?</label>  <br>
+                   
+              <input
+                name="how-know"
+                value="c1"
+                type="checkbox"
+                class="input-checkbox"
+                     checked/>Por medio de un amigo, familiar.</label
+            ><br>
+            <label>
+              <input
+                name="how-know"
+                value="c2"
+                type="checkbox"
+                class="input-checkbox"
+              />Por medio de los libros de J.K. Rowling</label
+            >
+            <br>
+            <label
+              ><input
+                name="how-know"
+                value="c3"
+                type="checkbox"
+                class="input-checkbox"
+              />De las películas producidas por Warner Bros Studio.</label
+            >
+                <br>
+              <input
+                name="how-know"
+                value="c4"
+                type="checkbox"
+                class="input-checkbox" id="option1"
+               >Otros</input> 
+          </div>
+            <div class="form-group">
+              <label id="why-label">¿Cúal de los 7 libros de la saga, escritos por J.K. Rowling, te gustó más?</label>
+               <select id="dropdown" name="role" class="form-control" required>
+                 <option disabled selected value>Elige una opción.</option>
+                 <option value="libro1">Harry Potter y la Piedra Filosofal (1997)</option>
+                 <option value="libro2">Harry Potter y la Cámara Secreta (1998)</option>
+                <option value="libro3">Harry Potter y el Prisionero de Azkaban (1999)</option>
+                 <option value="libro4">Harry Potter y el Cáliz de Fuego (2000)</option>
+                 <option value="libro5">Harry Potter y la Orden del Fénix (2003)</option>
+                   <option value="libro6">Harry Potter y el Misterio del Príncipe (2005)</option>
+                 <option value="libro7">Harry Potter y las Reliquias de la Muerte (2007)</option>
+                 </select>
+                 </div>
+      
+        <div class="form-group">
+            <label class="label">¿Cúal es la varita más poderosa de la saga?</label><br>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+                     />La varita hecha de acebo y tiene una pluma de fénix en su núcleo.</label>
+            <br>
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />La varita hecha de Jacarandá marrón claro, unida a un mango de ébano y con una punta aplanada.</label
+            >
+      <br>
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />La varita hecha de roble con un núcleo de fibra de corazón de dragón.</label
+            ><br>
+           <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />La varita hecha de 
+      Saúco y su núcleo es un pelo de cola de Thestral </label
+            >
+          </div>
+         <div class="form-group">
+              <label id="why-label">¿Cúal es tu personaje favorito de la saga?</label>
+               <select id="dropdown" name="role" class="form-control" required>
+                 <option disabled selected value>Elige una opción,</option>
+                 <option value="albus">Albus Dumbledore </option>
+                 <option value="sirius">Sirius Black</option>
+                <option value="harry">Harry Potter</option>
+                 <option value="hermione">Hermione Jean Granger </option>
+                 <option value="luna">Luna Lovegood </option>
+                   <option value="draco">Draco Malfoy </option>
+                 <option value="minerva">Minerva McGonagall </option>
+                 <option value="fred-george">Fred Weasley y George Weasley</option>
+                 <option value="ron">Ron Weasley </option>
+                 <option value="molly">Molly Weasley</option>
+                 </select>
+                 </div>
+        <div class="form-group">
+          <label class="label" for="comments">Describe la escena que más te encantó de la saga </label>
+          <textarea
+           id="comments"
+           class="input-textarea"
+           name="comment"                    placeholder="Escribe Aquí..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="custom-btn btn-12"><span>Click!</span><span>Enviar</span></button>
+        </div>
+          </form>
+        </div>
+      </body>
+</html>
